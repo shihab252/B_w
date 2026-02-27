@@ -7,7 +7,7 @@ import SecretSection from './components/SecretSection'
 import SecretRomanticPage from './components/SecretAgain'
 
 function App() {
-  const [lang, setLang] = useState('BN');
+  const [lang, setLang] = useState('EN');
   return (
     <main className="bg-[#fff5f5] selection:bg-rose-200">
       <Hero lang={lang} setLang={setLang}/>
