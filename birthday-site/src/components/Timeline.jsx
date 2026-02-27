@@ -4,7 +4,7 @@ import { useRef } from "react";
 const memories = [
   { src: "/images/timeline/she_with_her_mother_whenshewassmall_maybe2yearsold.jpg", tilt: -3 },
   { src: "/images/timeline/school_her.jpeg", tilt: 2 },
-  { src: "/images/timeline/on_her_parents_27thannuversary_in2021_june 8th.jpg", tilt: -1 },
+  { src: "/images/timeline/family.jpeg", tilt: -1 },
   { src: "/images/timeline/ayat(nickname_pakhi)_her_bigsistersdaughter_herheart.jpg", tilt: 4 },
   { src: "/images/timeline/n3.jpeg", tilt: -2 },
   { src: "/images/timeline/n1.jpg", tilt: 3 },
