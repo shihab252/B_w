@@ -23,7 +23,8 @@ const SecretGallery = () => {
       if (heroMusic) heroMusic.pause();
     } else {
       setError(true);
-      setTimeout(() => setError(false), 500);
+      // Keeps the error message visible slightly longer than the shake
+      setTimeout(() => setError(false), 2000); 
     }
   };
 
@@ -32,7 +33,7 @@ const SecretGallery = () => {
       title: "How it Began",
       text:
         "Our story began with two cups of bad tea. But you stayed anyway. You smiled and said the second one was better — just so I wouldn't feel bad.",
-      img: "/images/friendship/tea.jpg",
+      img: "/images/friendship/cha11.png",
       icon: <Coffee size={22} className="text-amber-500" />,
     },
     {
@@ -93,13 +94,13 @@ const SecretGallery = () => {
                 A Private Archive
               </h2>
 
-              <div className="relative mb-8">
+              <div className="relative mb-4">
                 <input
                   type="password"
                   placeholder="The Secret Nickname"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full bg-transparent border-b border-rose-200 text-center py-3 text-xl outline-none focus:border-rose-400"
+                  className={`w-full bg-transparent border-b ${error ? 'border-red-400' : 'border-rose-200'} text-center py-3 text-xl outline-none focus:border-rose-400 transition-colors`}
                 />
                 <button
                   onClick={() => setShowHint(!showHint)}
@@ -107,6 +108,22 @@ const SecretGallery = () => {
                 >
                   <HelpCircle size={16} />
                 </button>
+              </div>
+
+              {/* ERROR MESSAGE AREA */}
+              <div className="h-6 mb-4">
+                <AnimatePresence>
+                  {error && (
+                    <motion.p
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      className="text-red-500 text-xs italic"
+                    >
+                      That's not the right name, think again !
+                    </motion.p>
+                  )}
+                </AnimatePresence>
               </div>
 
               {showHint && (
