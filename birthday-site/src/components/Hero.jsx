@@ -100,7 +100,7 @@ const Hero = ({ lang = "EN", setLang, isPlaying, setIsPlaying }) => {
       greeting: "Happy Birthday",
       name: "Nourin",
       quote:
-        "In all the chaos of life, you became my peace without even trying.",
+        "You’re not just a part of my story; you’re the part that makes it worth telling.",
       scroll: "Scroll Our Story",
       signature: "Shihab",
     },
@@ -109,7 +109,7 @@ const Hero = ({ lang = "EN", setLang, isPlaying, setIsPlaying }) => {
       greeting: "শুভ জন্মদিন",
       name: "নওরিন",
       quote:
-        "সব কোলাহলের ভিড়ে তুই-ই আমার শান্তি হয়ে গেছিস, কোনো চেষ্টা ছাড়াই।",
+        "তুই শুধু আমার গল্পের অংশ না; তুই সেই অংশ যার জন্য গল্পটা সুন্দর।",
       scroll: "আমাদের গল্প",
       signature: "শিহাব",
     },
